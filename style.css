@@ -23,7 +23,9 @@
         .fullVid{
 
         height: 90vh!important;
-        width: auto;
+        width: auto!important;
+          border-radius: 7em;
+
         
 
 
@@ -32,8 +34,8 @@
 
         .fullImg{
 
-        height:100vh;
-        width: auto;
+        height: 90vh!important;
+        width: auto!important;
 
         }
 
