@@ -54,37 +54,7 @@ body{
 
 
 
-.logo {
-    transform: rotate(-75deg);
-    transform-origin: top left;
 
-    height:100vw;
-    width: auto;
-
-    top: 88%;
-    left: 0;
-
-  position: fixed;
-
-  visibility: visible;
-  opacity: 1;
-
-  transition-delay: 1.3s;
-  -webkit-transition: visibility 0s 5s, opacity 4s cubic-bezier(0.5, 0, 0.75, 0); /* Safari */
-    transition: visibility 0s 5s, opacity 4s cubic-bezier(0.5, 0, 0.75, 0);
-
-    z-index: 1;
-
-
-}
-
-.hidden{
-  visibility: hidden;
-
-  opacity: 0;
-
-
-}
 
 a{
     text-decoration:none;
@@ -185,4 +155,36 @@ padding:0.2em;
 	text-align: center;
 }
 
+
+
+.logo {
+    transform: rotate(-75deg);
+    transform-origin: top left;
+
+    height:100vw;
+    width: auto;
+
+    top: 88%;
+    left: 0;
+
+  position: fixed;
+
+  visibility: visible;
+  opacity: 1;
+
+    z-index: 1;
+    
+    animation: fade 4s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
+    -webkit-animation: fade 4s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
+
+}
+
+
+@keyframes fade {
+  0% { opacity: 0; }
+  17% { opacity: 1; }
+  70% { opacity: 1; }
+
+  100% { opacity: 0; visibility:hidden; }
+}
 
