@@ -172,10 +172,14 @@ padding:0.2em;
   visibility: visible;
   opacity: 1;
 
+  transition-delay: 4s;
+  -webkit-transition: visibility 0s 5s, opacity 4s cubic-bezier(0.5, 0, 0.75, 0); /* Safari */
+    transition: visibility 0s 5s, opacity 4s cubic-bezier(0.5, 0, 0.75, 0);
+
     z-index: 1;
     
-    animation: fade 4s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
-    -webkit-animation: fade 4s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
+    animation: fade 3.5s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
+    -webkit-animation: fade 3.5s cubic-bezier(0.5, 0, 0.75, 0) 1 forwards;
 
 }
 
