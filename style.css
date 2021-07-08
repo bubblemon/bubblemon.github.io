@@ -1,7 +1,6 @@
  
 
-
-@import url('@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Exo:ital,wght@1,700&family=Gruppo&family=Oxygen&family=VT323&display=swap');');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Oxygen:wght@300&display=swap');
 
 
 
@@ -18,7 +17,7 @@ body{
 
 
 a{
-    text-decoration:underline;
+    text-decoration:none;
     color:black;
 
 
@@ -62,7 +61,6 @@ h3{
 
 p{
     font-size: 75%;
-    font-style:cursive;
 }
 
 .bgVid{
@@ -116,7 +114,10 @@ padding:0.2em;
 
 .alignright{
 	text-align: right;
-
+}
+.aligncenter{
+	text-align: center;
+}
 
 }
 
@@ -128,7 +129,7 @@ padding:0.2em;
         transform-origin: bottom right;
 
         height:auto;
-        width: 100vw;
+        width: 100%;
 
         top: 0;
         left: 0;
@@ -142,18 +143,17 @@ padding:0.2em;
 
         .fullVid {
 
-        height:90vw;
+        max-height: 92vw !important;
         width: auto;
-        border-radius:0;
+        
 
         }
 
 
         .fullImg {
 
-        height:90vw;
+        height:90%;
         width: auto;
-        border-radius:0;
 
         }
 
