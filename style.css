@@ -4,6 +4,42 @@
 
 
 
+    @media (orientation: landscape){
+
+        .logo{
+
+        transform: rotate(0deg)!important;
+        transform-origin: bottom left !important;
+
+        height:auto !important;;
+        width: 100% !important;;
+
+        top: 0% !important;
+        left: 0!important;
+            
+
+        }
+
+        .fullVid{
+
+        height: 90vh!important;
+        width: auto;
+        
+           border-radius: 0em;
+
+
+        }
+
+
+        .fullImg{
+
+        height:100vh;
+        width: auto;
+
+        }
+
+
+}
 
 body{
   background-image: repeating-linear-gradient(violet, white 40vw, white 20%, violet 60%);
@@ -15,6 +51,31 @@ body{
   font-size: 7vw;
 }
 
+
+
+.logo {
+    transform: rotate(-75deg);
+    transform-origin: top left;
+
+    height:100vw;
+    width: auto;
+
+    top: 88%;
+    left: 0;
+
+  position: fixed;
+
+  visibility: visible;
+  opacity: 1;
+
+  transition-delay: 1.3s;
+  -webkit-transition: visibility 0s 5s, opacity 4s ease-in; /* Safari */
+    transition: visibility 0s 5s, opacity 4s ease-in;
+
+    z-index: 1;
+
+
+}
 
 a{
     text-decoration:none;
@@ -115,47 +176,9 @@ padding:0.2em;
 .alignright{
 	text-align: right;
 }
+
 .aligncenter{
 	text-align: center;
 }
 
-}
 
-    @media (orientation: landscape) {
-
-        .logo{
-
-        transform: rotate(0deg);
-        transform-origin: bottom right;
-
-        height:auto;
-        width: 100%;
-
-        top: 0;
-        left: 0;
-            
-
-        }
-
-        body{
-            background-color: orange;
-        }
-
-        .fullVid {
-
-        max-height: 92vw !important;
-        width: auto;
-        
-
-        }
-
-
-        .fullImg {
-
-        height:90%;
-        width: auto;
-
-        }
-
-
-}
